@@ -9,4 +9,4 @@ Stisla is Free Bootstrap Admin Template and will help you to speed up your proje
 
 ## Lisensi
 
-[![License](https://img.shields.io/github/license/rails-id/weblog.svg)](LICENSE)
+[![License](https://img.shields.io/github/license/SunDi3yansyah/stisla-rails.svg)](LICENSE)
