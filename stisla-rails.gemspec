@@ -1,16 +1,28 @@
-require File.expand_path('../lib/stisla-rails/version', __FILE__)
+lib = File.expand_path("../lib", __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require "stisla/rails/version"
 
-Gem::Specification.new do |s|
-  s.name          = 'stisla-rails'
-  s.version       = Stisla::Rails::VERSION
-  s.authors       = ['Cahyadi Triyansyah']
-  s.email         = ['sundi3yansyah@gmail.com']
-  s.summary       = %q{Integrates the Stisla theme with the Rails assets pipeline}
-  s.homepage      = 'https://github.com/SunDi3yansyah/stisla-rails'
-  s.license       = 'MIT'
+Gem::Specification.new do |spec|
+  spec.name          = "stisla-rails"
+  spec.version       = Stisla::Rails::VERSION
+  spec.authors       = ["Cahyadi Triyansyah"]
+  spec.email         = ["sundi3yansyah@gmail.com"]
 
-  s.files         = `git ls-files`.split("\n")
-  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-  s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
-  s.require_paths = ['lib']
+  spec.summary       = %q{Integrates the Stisla theme with the Rails assets pipeline}
+  spec.description   = %q{Stisla is Free Bootstrap Admin Template and will help you to speed up your project, design your own dashboard UI and the users will love it.}
+  spec.homepage      = "https://github.com/SunDi3yansyah/stisla-rails"
+  spec.license       = "MIT"
+
+  # Specify which files should be added to the gem when it is released.
+  # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
+  spec.files         = Dir.chdir(File.expand_path('..', __FILE__)) do
+    `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
+  end
+  spec.bindir        = "exe"
+  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
+  spec.require_paths = ["lib"]
+
+  spec.add_development_dependency "bundler", "~> 2.0"
+  spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "minitest", "~> 5.0"
 end
