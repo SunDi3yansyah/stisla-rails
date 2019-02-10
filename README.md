@@ -53,6 +53,6 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/SunDi3
 Everyone interacting in the Stisla::Rails project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/stisla-rails/blob/master/CODE_OF_CONDUCT.md).
 
 
-## Lisensi
+## License
 
 [![License](https://img.shields.io/github/license/SunDi3yansyah/stisla-rails.svg)](LICENSE)
