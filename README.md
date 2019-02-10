@@ -1,6 +1,6 @@
 # Stisla for Rails
 
-[![Build Status](https://travis-ci.org/SunDi3yansyah/stisla-rails.svg)](https://travis-ci.org/SunDi3yansyah/stisla-rails)
+[![Build Status](https://travis-ci.com/SunDi3yansyah/stisla-rails.svg)](https://travis-ci.com/SunDi3yansyah/stisla-rails)
 
 Stisla is Free Bootstrap Admin Template and will help you to speed up your project, design your own dashboard UI and the users will love it.
 
