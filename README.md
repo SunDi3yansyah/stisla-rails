@@ -11,6 +11,7 @@ Stisla is Free Bootstrap Admin Template and will help you to speed up your proje
 ## Link Stisla
 - Homepage: [getstisla.com](https://getstisla.com)
 - Repository: [github.com/stisla/stisla](https://github.com/stisla/stisla)
+- Documentation: [getstisla.com/docs](https://getstisla.com/docs)
 
 ## Installation
 
@@ -35,8 +36,28 @@ $ gem install stisla-rails
 
 ## Usage
 
-TODO: Write usage instructions here
+Open `app/assets/stylesheets/application.scss` then put like this:
 
+``` scss
+// ... other stuff
+
+@import "style.scss";
+@import "components";
+
+// ... other stuff
+```
+
+Open `app/assets/javascript/application.js` then put like this:
+
+``` js
+// ... other stuff
+
+//= require stisla
+//= require scripts
+//= require custom
+
+// ... other stuff
+```
 
 ## Development
 
