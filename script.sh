@@ -1,5 +1,7 @@
 #!/bin/bash
 
+rm -rf vendor/assets/{stylesheets/*,javascripts/*,fonts/*,img/*,modules/*}
+
 cp -R stisla/sources/scss/* vendor/assets/stylesheets
 cp -R stisla/dist/assets/js/* vendor/assets/javascripts
 cp -R stisla/dist/assets/fonts/* vendor/assets/fonts
