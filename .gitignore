@@ -12,7 +12,7 @@
 *.gem
 .sass-cache
 Gemfile.lock
-*.gemfile.lock
+*.lock
 .rvmrc
 .rbenv-version
 tmp/
