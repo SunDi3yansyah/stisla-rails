@@ -80,4 +80,4 @@ Everyone interacting in the Stisla::Rails project’s codebases, issue trackers,
 
 ## License
 
-Stisla Rails is under the [MIT License](LICENSE)
+The gem is available as open source under the terms of the [MIT License](LICENSE).
