@@ -19,3 +19,15 @@ tmp/
 .DS_Store
 node_modules
 /.idea
+
+/vendor/assets/fonts/*
+/vendor/assets/img/*
+/vendor/assets/javascripts/*
+/vendor/assets/modules/*
+/vendor/assets/stylesheets/*
+
+!/vendor/assets/fonts/.keep
+!/vendor/assets/img/.keep
+!/vendor/assets/javascripts/.keep
+!/vendor/assets/modules/.keep
+!/vendor/assets/stylesheets/.keep
