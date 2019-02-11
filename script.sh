@@ -16,3 +16,5 @@ sed -i "s|url('../fonts/|asset-url('|g" vendor/assets/stylesheets/**/*.scss
 sed -i 's|url("../fonts/|asset-url("|g' vendor/assets/stylesheets/**/*.scss
 
 sed -i 's|url("..|asset-url("fontawesome|g' vendor/assets/modules/fontawesome/css/all.scss
+
+echo "Yay! copying modules from Stisla was successfully done"
