@@ -43,7 +43,7 @@ Open `app/assets/stylesheets/application.scss` then put like this:
 ``` scss
 // ... other stuff
 
-@import "style.scss";
+@import "style";
 @import "components";
 
 // ... other stuff
