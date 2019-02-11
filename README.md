@@ -9,8 +9,8 @@ Stisla is Free Bootstrap Admin Template and will help you to speed up your proje
 [![Stisla Preview](https://camo.githubusercontent.com/2135e0f6544a7286a3412cdc3df32d47fc91b045/68747470733a2f2f692e6962622e636f2f3674646d6358302f323031382d31312d31312d31352d33352d676574737469736c612d636f6d2e706e67)](https://getstisla.com)
 
 ## Link Stisla
-- Homepage: https://getstisla.com
-- Repository: https://github.com/stisla/stisla
+- Homepage: [getstisla.com](https://getstisla.com)
+- Repository: [github.com/stisla/stisla](https://github.com/stisla/stisla)
 
 ## Installation
 
@@ -52,7 +52,7 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/SunDi3
 
 ## Code of Conduct
 
-Everyone interacting in the Stisla::Rails project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/SunDi3yansyah/stisla-rails/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the Stisla::Rails project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](CODE_OF_CONDUCT.md).
 
 
 ## License
