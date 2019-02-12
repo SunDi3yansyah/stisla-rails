@@ -5,7 +5,7 @@ class Stisla::RailsTest < Minitest::Test
     refute_nil ::Stisla::Rails::VERSION
   end
 
-  # def test_it_does_something_useful
-  #   assert false
-  # end
+  def test_it_does_something_useful
+    assert true
+  end
 end
