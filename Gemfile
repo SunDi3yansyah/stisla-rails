@@ -1,7 +1,4 @@
-# frozen_string_literal: true
-
 source 'https://rubygems.org'
 
+# Specify your gem's dependencies in ip-lookup.gemspec
 gemspec
-
-gem 'rake', group: [:test, :development]
