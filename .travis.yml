@@ -15,7 +15,7 @@ before_install:
   - travis_retry gem install bundler
 install:
   - travis_retry bundle
-  - gem build stisla-rails.gemspec
-  - gem install ./stisla-rails-*.gem
+  - gem build
+  - gem install
 notifications:
   email: false

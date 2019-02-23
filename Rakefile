@@ -26,16 +26,6 @@ task :load_path do
   end
 end
 
-desc "Remove temporary files"
-task :clean do
-  %x{rm -rf *.gem doc pkg}
-end
-
-desc "Build the gem"
-task :gem do
-  %x{gem build stisla-rails.gemspec}
-end
-
 desc "Build the Stisla resources"
 task :stisla do
   %x{ruby stisla.rb}
