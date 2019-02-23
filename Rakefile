@@ -18,3 +18,20 @@ Rake::TestTask.new(:test) do |t|
   t.libs << "lib"
   t.test_files = FileList["test/**/*_test.rb"]
 end
+
+desc "Loaded path"
+task :load_path do
+  %w(lib test).each do |path|
+    $LOAD_PATH.unshift(File.expand_path("../#{path}", __FILE__))
+  end
+end
+
+desc "Remove temporary files"
+task :clean do
+  %x{rm -rf *.gem doc pkg}
+end
+
+desc "Build the gem"
+task :gem do
+  %x{gem build stisla-rails.gemspec}
+end
