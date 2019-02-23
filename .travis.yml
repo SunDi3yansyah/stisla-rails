@@ -12,7 +12,7 @@ branches:
 cache: bundler
 before_install:
   - travis_retry gem update --system
-  - travis_retry gem install bundler
+  - travis_retry gem install bundler rake
 install:
   - travis_retry bundle
   - gem build
