@@ -105,14 +105,14 @@ Open `app/assets/javascript/application.js` then put like this:
 
 #### Font Awesome
 
-There is a problem if you use sources from node_modules whether it's css or scss, maybe this is a temporary solution that you can use
+There is a problem if you use sources from node_modules whether it's css or scss, maybe this is a temporary solution that you can use.
 
 Generate fontawesome to `app/assets/fonts`
 ```bash
 rails g stisla_rails:fontawesome
 ```
 
-then you can add `lib/fontawesome` wherever you want to use it
+Then you can add `lib/fontawesome` wherever you want to use it.
 
 
 ## Development
