@@ -12,10 +12,10 @@ branches:
 cache: bundler
 before_install:
   - travis_retry gem update --system
-  - travis_retry gem install bundler rake
+  - travis_retry gem install bundler
 install:
   - travis_retry bundle
-  - gem build
-  - gem install
+  - gem build stisla-rails.gemspec
+  - gem install ./stisla-rails-*.gem
 notifications:
   email: false
