@@ -75,6 +75,10 @@ Then, remove all the `*= require_self` and `*= require_tree .` statements from t
 
 Do not use `*= require` in Sass or your other stylesheets will not be [able to access][antirequire] the Bootstrap mixins or variables.
 
+Generate the friendly configuration file and a new `package.json`
+```bash
+rails g stisla_rails:install
+```
 
 Open `app/assets/stylesheets/application.scss` then put like this:
 
@@ -98,6 +102,17 @@ Open `app/assets/javascript/application.js` then put like this:
 
 // ... other stuff
 ```
+
+#### Font Awesome
+
+There is a problem if you use sources from node_modules whether it's css or scss, maybe this is a temporary solution that you can use
+
+Generate fontawesome to `app/assets/fonts`
+```bash
+rails g stisla_rails:fontawesome
+```
+
+then you can add `lib/fontawesome` wherever you want to use it
 
 
 ## Development
