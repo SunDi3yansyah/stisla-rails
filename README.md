@@ -75,7 +75,7 @@ Then, remove all the `*= require_self` and `*= require_tree .` statements from t
 
 Do not use `*= require` in Sass or your other stylesheets will not be [able to access][antirequire] the Bootstrap mixins or variables.
 
-Generate the friendly configuration file and a new `package.json`
+Generate the Stisla Rails configuration file and a new package in `package.json`
 ```bash
 rails g stisla_rails:install
 ```
