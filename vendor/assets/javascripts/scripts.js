@@ -203,7 +203,7 @@ $(function() {
 
       $("body").addClass("sidebar-gone");
       $("body").removeClass("layout-2 layout-3 sidebar-mini sidebar-show");
-      $("body").off('click').on('click', function(e) {
+      $("body").off('click touchend').on('click touchend', function(e) {
         if($(e.target).hasClass('sidebar-show') || $(e.target).hasClass('search-show')) {
           $("body").removeClass("sidebar-show");
           $("body").addClass("sidebar-gone");
@@ -410,10 +410,12 @@ $(function() {
 
     me.click(function() {
       $(target).collapse('toggle');
-      $(target).on('shown.bs.collapse', function() {
+      $(target).on('shown.bs.collapse', function(e) {
+        e.stopPropagation();
         me.html('<i class="fas fa-minus"></i>');
       });
-      $(target).on('hidden.bs.collapse', function() {
+      $(target).on('hidden.bs.collapse', function(e) {
+        e.stopPropagation();
         me.html('<i class="fas fa-plus"></i>');
       });
       return false;
