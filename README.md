@@ -64,6 +64,18 @@ $ gem install stisla-rails
 
 ## Usage
 
+Make sure the file has `.scss` extension (or `.sass` for Sass syntax). If you have just generated a new Rails app,
+it may come with a `.css` file instead. If this file exists, it will be served instead of Sass, so rename it:
+
+```bash
+$ mv app/assets/stylesheets/application.css app/assets/stylesheets/application.scss
+```
+
+Then, remove all the `*= require_self` and `*= require_tree .` statements from the sass file. Instead, use `@import` to import Sass files.
+
+Do not use `*= require` in Sass or your other stylesheets will not be [able to access][antirequire] the Bootstrap mixins or variables.
+
+
 Open `app/assets/stylesheets/application.scss` then put like this:
 
 ``` scss
