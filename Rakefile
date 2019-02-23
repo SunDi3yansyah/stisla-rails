@@ -35,3 +35,8 @@ desc "Build the gem"
 task :gem do
   %x{gem build stisla-rails.gemspec}
 end
+
+desc "Build the Stisla resources"
+task :stisla do
+  %x{ruby stisla.rb}
+end
