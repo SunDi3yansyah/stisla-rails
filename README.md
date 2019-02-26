@@ -27,7 +27,7 @@
 
 ## Status
 
-[![Build Status](https://travis-ci.com/SunDi3yansyah/stisla-rails.svg)](https://travis-ci.com/SunDi3yansyah/stisla-rails)
+[![Build Status](https://travis-ci.org/SunDi3yansyah/stisla-rails.svg)](https://travis-ci.org/SunDi3yansyah/stisla-rails)
 [![License](https://img.shields.io/github/license/SunDi3yansyah/stisla-rails.svg)](LICENSE)
 [![Gem Version](https://badge.fury.io/rb/stisla-rails.svg)](https://badge.fury.io/rb/stisla-rails)
 [![Download total](https://img.shields.io/gem/dt/stisla-rails.svg?style=flat)](https://badge.fury.io/rb/stisla-rails)
