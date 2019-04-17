@@ -1,10 +1,8 @@
-dist: xenial
 sudo: false
 language: ruby
 rvm:
-  - 2.4.5
-  - 2.5.3
-  - 2.6.0
+  - 2.5.5
+  - 2.6.2
   - ruby-head
 branches:
   only:
@@ -14,7 +12,8 @@ before_install:
   - travis_retry gem update --system
   - travis_retry gem install bundler
 install:
-  - travis_retry bundle
+  - travis_retry bundle install
+  - travis_retry bundle update
   - gem build stisla-rails.gemspec
   - gem install ./stisla-rails-*.gem
 notifications:
